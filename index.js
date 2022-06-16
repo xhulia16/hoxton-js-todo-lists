@@ -142,8 +142,13 @@ const todos = [
         completed: false
     }
 ]
-let usersDetails = []
-let message=``
 for (let i = 0; i < users.length; i++) {
     alert(`Id number: ${users[i].id}; Name: ${users[i].name}; City: ${users[i].address.city}`)
+}
+
+let newUserId=Number(prompt("What is your user ID?"))
+for (let i = 0; i < todos.length; i++) {
+    if(newUserId===todos[i].userId){
+console.log(todos[i].title,todos[i].completed )
+    }
 }
